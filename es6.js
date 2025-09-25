@@ -11,10 +11,20 @@ const student={
 
 
 // Nested Destructure
-const data={
-    profile:{
-        email:"useremail@gmail.com",
-        name:"Username"
-    }
+// const data={
+//     profile:{
+//         email:"useremail@gmail.com",
+//         name:"Username"
+//     }
+// }
+// console.log({profile}=data);
+
+// Spread and rest operator
+// const arr=[1,2,3,4,4,5,5,5,,5];
+// const [,second,, fifth, ...rest]=arr;
+// console.log(second,fifth,...rest);
+
+function addNumber(...number){
+    return number.reduce((acc,cur)=>acc+cur,0);
 }
-console.log({profile}=data);
+console.log(addNumber(1,2,3,4,5));
