@@ -4,6 +4,6 @@ const student={
     address:"Beijing",
     Id:2023030077
 }
-// Destructure
-const {address}=student;
-console.log(address)
+// Destructure value from object
+const {address,age,name:studentName,Id}=student;
+console.log(studentName,address,age,Id);
